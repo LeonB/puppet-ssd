@@ -1,0 +1,2 @@
+class ssd::package {
+}
