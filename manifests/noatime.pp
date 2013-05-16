@@ -2,7 +2,7 @@ define ssd::noatime(
     $mountpoint = $title,
 ){
 
-    augeas { 'add_noatime':
+    augeas { "add_noatime_${mountpoint}":
         context => '/files/etc/fstab',
         changes => [
             #create node for noatime
