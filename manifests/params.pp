@@ -14,8 +14,8 @@
 #
 class ssd::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	$enabled = true
+  $enabled = true
 
 }

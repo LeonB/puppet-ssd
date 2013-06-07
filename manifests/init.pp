@@ -1,11 +1,11 @@
 class ssd(
-	$enabled       = params_lookup( 'enabled' )
+  $enabled       = params_lookup( 'enabled' )
   ) inherits ssd::params {
 
-  	$ensure = $enabled ? {
-  		true => present,
-  		false => absent,
-  	}
+    $ensure = $enabled ? {
+      true => present,
+      false => absent,
+    }
 
-	include ssd::package, ssd::config, ssd::service
+  include ssd::package, ssd::config, ssd::service
 }
